@@ -7,6 +7,7 @@ public class MyLinkedList {
         this.head = null;
         this.tail = null;
     }
+
     public void add(INode myNode) {
         if(this.head == null && this.tail == null){
             this.head = myNode;
@@ -17,6 +18,7 @@ public class MyLinkedList {
             this.head.setNext(temp);
         }
     }
+
     public void printNodes() {
         StringBuffer nodes = new StringBuffer();
         INode tempNode = head;
@@ -43,14 +45,25 @@ public class MyLinkedList {
 
         }
     }
+
     public void insert(INode myNode,INode newNode) {
         INode tempNode = myNode.getNext();
         myNode.setNext(newNode);
         newNode.setNext(tempNode);
     }
+
     public INode pop() {
         INode tempNode = this.head;
         this.head=head.getNext();
+        return tempNode;
+    }
+    public INode popLast(){
+        INode tempNode = head;
+        while(!tempNode.getNext().equals(tail)){
+            tempNode = tempNode.getNext();
+        }
+        this.tail = tempNode;
+        tempNode.setNext(null);
         return tempNode;
     }
 }

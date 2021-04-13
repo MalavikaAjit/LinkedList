@@ -16,6 +16,7 @@ public class MyLinkedListTest {
 
         Assertions.assertEquals(myThirdNode.getKey(), myLinkedList.head.getKey());
     }
+
     @Test
     void given3Numbers_whenAppendedToLinkedList_ShouldAddAtLast() {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
@@ -33,6 +34,7 @@ public class MyLinkedListTest {
                 myLinkedList.tail.equals(myThirdNode);
         Assertions.assertTrue(result);
     }
+
     @Test
     public void given3Numbers_WhenAddedToLinkedList_ShouldBeAddedToBetween() {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
@@ -50,6 +52,8 @@ public class MyLinkedListTest {
                 myLinkedList.tail.equals(myThirdNode);
         Assertions.assertTrue(result);
     }
+
+
     @Test
     public void given3Numbers_WhenDeletedFirstElement_ShouldPassLinkedListResult() {
         MyNode<Integer>myFirstNode = new MyNode<>(56);
@@ -66,5 +70,4 @@ public class MyLinkedListTest {
                 myLinkedList.head.getNext().equals(myThirdNode);
         Assertions.assertTrue(result);
     }
-
 }
