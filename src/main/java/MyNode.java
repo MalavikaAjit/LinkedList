@@ -1,5 +1,5 @@
-public class MyNode <K> implements INode<K>{
 
+public class MyNode<K> implements INode<K> {
     public K key;
     public INode<K> next;
 
@@ -24,5 +24,5 @@ public class MyNode <K> implements INode<K>{
     public void setNext(INode next) {
         this.next = (INode<K>) next;
     }
-}
 
+}
