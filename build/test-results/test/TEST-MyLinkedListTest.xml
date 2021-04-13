@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MyLinkedListTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-04-13T12:49:55" hostname="LAPTOP-TLTN6P2Q" time="0.043">
+  <properties/>
+  <testcase name="given3Numbers_whenAppendedToLinkedList_ShouldAddAtLast()" classname="MyLinkedListTest" time="0.034"/>
+  <testcase name="given3NumbersWhenAddedToLinkedListShouldBeAddedToInBetween()" classname="MyLinkedListTest" time="0.002"/>
+  <testcase name="given3Numbers_whenAddedToLinkedList_ShouldAppearOnTop()" classname="MyLinkedListTest" time="0.004"/>
+  <system-out><![CDATA[56->30->70
+56->30->70
+56->30->70
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
