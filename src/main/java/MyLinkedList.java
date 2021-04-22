@@ -1,5 +1,4 @@
 public class MyLinkedList {
-
     public INode head;
     public INode tail;
 
@@ -42,7 +41,6 @@ public class MyLinkedList {
         }else {
             this.tail.setNext(myNode);
             this.tail = myNode;
-
         }
     }
 
@@ -57,6 +55,7 @@ public class MyLinkedList {
         this.head=head.getNext();
         return tempNode;
     }
+
     public INode popLast(){
         INode tempNode = head;
         while(!tempNode.getNext().equals(tail)){
@@ -66,5 +65,16 @@ public class MyLinkedList {
         tempNode.setNext(null);
         return tempNode;
     }
-}
 
+    public <k> boolean search(k key){
+        INode tempnode = head;
+        while(tempnode!=null && tempnode.getNext()!=null){
+            if(tempnode.getKey()==key){
+                return true;
+            }
+            tempnode = tempnode.getNext();
+        }
+        return false;
+    }
+
+}
